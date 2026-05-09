@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Helpdesk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart Helpdesk</h1>
+    <h2>Submit Your Technical Issue</h2>
+
+    <form action="/submit" method="post">
+        <textarea name="issue" rows="5" placeholder="Describe your problem..."></textarea>
+        <button type="submit">Submit Ticket</button>
+    </form>
+
+    <br>
+    <a href="/history">View Ticket History</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Ticket Submitted Successfully</h2>
+
+    <div class="result-box">
+        <p><b>Issue:</b> {{ issue }}</p>
+        <p><b>Category:</b> {{ category }}</p>
+        <p><b>Suggested Solution:</b> {{ solution }}</p>
+    </div>
+
+    <br>
+    <a href="/">Submit Another Ticket</a>
+</div>
+
+</body>
+</html>
